@@ -61,7 +61,7 @@ setup(
         "pytest>=3.6",
         "pyvmomi",
         "pyxdg",
-        "pyyaml",
+        "pyyaml>=5.1",
         "widgetastic.core",
         "widgetastic.patternfly",
     ],
