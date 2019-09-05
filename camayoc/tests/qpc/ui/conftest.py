@@ -71,7 +71,7 @@ def qpc_login(browser):
     login.username.fill("admin")
     login.password.fill("pass")
     login.login.click()
-    assert browser.selenium.title == "Entitlements Reporting"
+    assert browser.selenium.title == "product discovery"
 
 
 @pytest.fixture(scope="module")
