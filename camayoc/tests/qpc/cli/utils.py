@@ -499,4 +499,11 @@ def setup_qpc():
         events=[("Password: ", password + "\n")],
         withexitstatus=True,
     )
+    fail_values = {'username': username,
+                   'password': password,
+                   'client_cmd': client_cmd,
+                   'command': command,
+                   'output': output,
+                   'existstatus': exitstatus}
+    assert fail_values == 0, "haha"
     assert exitstatus == 0, output
