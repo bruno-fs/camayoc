@@ -299,6 +299,7 @@ def test_products_found_deployment_report(scan_info):
     )
 
 
+@pytest.mark.skip(reason="Skipped until Quipucords Issue #2039 is resolved")
 @mark_runs_scans
 @pytest.mark.parametrize("scan_info", scan_list(), ids=utils.name_getter)
 def test_OS_found_deployment_report(scan_info):
